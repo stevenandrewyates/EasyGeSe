@@ -4,14 +4,15 @@
 
 EasyGeSe is a comprehensive database for genomic selection with data records from diverse species such as barley, common bean, catfish, lentil, loblolly pine, Eastern oyster, maize, peanut, pig, rice, soybean and wheat. 
 
-The data are formatted, filtered and arranged in easy to use formats, with functions in R and Python for easy loading
+The data are formatted, filtered and arranged in easy to use formats; with functions in R and Python for easy loading
 
 # Code
 Find out out to use EasyGeSe with your favourite programs below
 ## R
 An example how to load the data into R and use BGLR to make predictions
-```library(BGLR)    # load the BGLR package
-source("https://sandbox.zenodo.org/record/1212678/files/LoadEasyGeSe.R?download=1") # load EasyGeSe R code for downloading data
+```
+library(BGLR)    # load the BGLR package
+source("LoadEasyGeSe.R") # load EasyGeSe R code for downloading data
 LoadEasyGeSe("lentil") # load the lentil data
 y <- Y[,1]	# extract the first trait
 tst <- sample(1:length(y),size=(round(length(y)/5)))    # make a subset of 20% testing data
