@@ -1,6 +1,6 @@
 # EasyGeSe
 
-![](https://github.com/stevenandrewyates/EasyGeSe/blob/main/EasyGeSe.png)
+![](https://github.com/stevenandrewyates/EasyGeSe/blob/main/summaryEasyGeSeFig.png)
 
 EasyGeSe is a comprehensive [database](https://zenodo.org/record/8041805) for genomic selection with data records from diverse species such as [barley](https://link.springer.com/article/10.1007/s00122-021-03815-0), [common bean](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07213-6), [catfish](https://academic.oup.com/g3journal/article/12/1/jkab361/6408442),  [lentil](https://doi.org/10.1002/tpg2.20002), [loblolly pine](https://academic.oup.com/genetics/article/190/4/1503/6064084), [Eastern oyster](https://doi.org/10.1093/g3journal/jkab368), [maize](https://doi.org/10.1186/s13104-020-4922-8), [pig](https://doi.org/10.1111/age.13121), [rice](https://www.nature.com/articles/ncomms1467), [soybean](https://doi.org/10.1007/s00122-017-2951-z) and [wheat](https://doi.org/10.1038/s41597-022-01651-5). 
 
@@ -49,9 +49,7 @@ python DownloadEasyGeSe.py lentil 1 1 # use the script here to download the 'len
 mkdir cropgbm_results # make a directory for the output
 cropgbm -o cropgbm_results/ -e -t --traingeno lentil_xtrain_1.txt --trainphe lentil_ytrain_1.txt # run CropGBM to estimate marker effects
 cropgbm -o cropgbm_results/ -e -p --testgeno lentil_xtest_1.txt --modelfile-path cropgbm_results/engine/lentil_xtrain_1.lgb_model # use CropGBM to predict the phenotype of the testing data
-python predict PredictEasyGeSe.py lentil_ytest_1.txt cropgbm_results/engine/lentil_xtest_1.predict # finally use a python script here to measure the correlation and root-mean-square (RMSE) between the observed (testing) and predicted phenotype
- 
-
+python PredictEasyGeSe.py lentil_ytest_1.txt cropgbm_results/engine/lentil_xtest_1.predict # finally use a Python script here to measure the correlation and root-mean-square (RMSE) between the observed (testing) and predicted phenotype
 ```
 For all tools the options are:
 
