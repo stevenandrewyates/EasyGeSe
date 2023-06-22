@@ -2,14 +2,14 @@
 
 ![](https://github.com/stevenandrewyates/EasyGeSe/blob/main/EasyGeSe.png)
 
-EasyGeSe is a comprehensive database for genomic selection with data records from diverse species such as barley, common bean, catfish, lentil, loblolly pine, Eastern oyster, maize, peanut, pig, rice, soybean and wheat. 
+EasyGeSe is a comprehensive (database)[https://zenodo.org/record/8041805] for genomic selection with data records from diverse species such as [barley](https://link.springer.com/article/10.1007/s00122-021-03815-0), [common bean](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07213-6), [catfish](https://academic.oup.com/g3journal/article/12/1/jkab361/6408442),  [lentil](https://doi.org/10.1002/tpg2.20002), [loblolly pine](https://academic.oup.com/genetics/article/190/4/1503/6064084), [Eastern oyster](https://doi.org/10.1093/g3journal/jkab368), [maize](https://doi.org/10.1186/s13104-020-4922-8), [pig](https://doi.org/10.1111/age.13121), [rice](https://www.nature.com/articles/ncomms1467), [soybean](https://doi.org/10.1007/s00122-017-2951-z) and [wheat](https://doi.org/10.1038/s41597-022-01651-5). 
 
 The data are formatted, filtered and arranged in easy to use formats; with functions in R and Python for easy loading
 
 # Code
 Find out out to use EasyGeSe with your favourite programs below
 ## R
-An example how to load the data into R and use BGLR to make predictions
+An example how to load the data into R and use [BGLR](https://cran.r-project.org/web/packages/BGLR/index.html) to make predictions
 ```
 library(BGLR)    # load the BGLR package
 source("LoadEasyGeSe.R") # load EasyGeSe R code for downloading data
@@ -27,7 +27,7 @@ sqrt(mean((Y[tst,1] - fmBL$yHat[tst])^2))    # check RMSE
 
 ## Python
 
-Use sklearn to make predictions using EasyGeSe
+Use [sklearn](https://scikit-learn.org/stable/) to make predictions using EasyGeSe
 
 ```
 from sklearn.model_selection import train_test_split    # load the train test split function
@@ -43,7 +43,7 @@ np.sqrt(np.mean((regressor.predict(x_test) - y_test)**2))    # check RMSE
 # 2.23977261800874072
 ```
 ## Terminal
-Use CropGBM to make predictions from the terminal with some helper scripts.
+Use [CropGBM](https://ibreeding.github.io/) to make predictions from the terminal with some helper scripts.
 ```
 python DownloadEasyGeSe.py lentil 1 1 # use the script here to download the 'lentil' data and use 20% for testing and 80% for training (split using sklearn). You also specify the which trait (column, 1) and which "random_state" to use. This will download four files the training data "lentil_xtrain_1.txt" (genotypic) and "lentil_ytrain_1.txt" (phenotypic), and for the testing data "lentil_xtest_1.txt" (genotypic) and "lentil_ytest_1.txt" (phenotypic)
 mkdir cropgbm_results # make a directory for the output
@@ -53,7 +53,7 @@ python predict PredictEasyGeSe.py lentil_ytest_1.txt cropgbm_results/engine/lent
  
 
 ```
-For all download tools the options are:
+For all tools the options are:
 
 | Option | Reference |
 | ------ | ------ |
