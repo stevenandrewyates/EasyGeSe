@@ -6,6 +6,8 @@ EasyGeSe is a comprehensive [database](https://zenodo.org/record/8041805) for ge
 
 The data are formatted, filtered and arranged in easy to use formats; with functions in R and Python for easy loading
 
+Also special thanks to [Carles Quesada](https://scholar.google.com/citations?user=2dE1syAAAAAJ&hl=en) and [Daniel Ariza Suarez](https://scholar.google.com/citations?hl=en&user=daAp8PMAAAAJ)
+
 # Code
 Find out out to use EasyGeSe with your favourite programs below
 ## R
