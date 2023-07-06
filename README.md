@@ -4,12 +4,12 @@
 
 EasyGeSe is a comprehensive [database](https://zenodo.org/record/8041805) for genomic selection with data records from diverse species such as [barley](https://link.springer.com/article/10.1007/s00122-021-03815-0), [common bean](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07213-6), [catfish](https://academic.oup.com/g3journal/article/12/1/jkab361/6408442),  [lentil](https://doi.org/10.1002/tpg2.20002), [loblolly pine](https://academic.oup.com/genetics/article/190/4/1503/6064084), [Eastern oyster](https://doi.org/10.1093/g3journal/jkab368), [maize](https://doi.org/10.1186/s13104-020-4922-8), [pig](https://doi.org/10.1111/age.13121), [rice](https://www.nature.com/articles/ncomms1467), [soybean](https://doi.org/10.1007/s00122-017-2951-z) and [wheat](https://doi.org/10.1038/s41597-022-01651-5). 
 
-The data are formatted, filtered and arranged in easy to use formats; with functions in R and Python for easy loading
+The data are formatted, filtered and arranged in easy to use formats; with functions in R and Python for easy loading.
 
 Also special thanks to [Carles Quesada](https://scholar.google.com/citations?user=2dE1syAAAAAJ&hl=en) and [Daniel Ariza Suarez](https://scholar.google.com/citations?hl=en&user=daAp8PMAAAAJ)
 
 # Code
-Find out out to use EasyGeSe with your favourite programs below
+Find out how to use EasyGeSe with your favourite programs below.
 ## R
 An example how to load the data into R and use [BGLR](https://cran.r-project.org/web/packages/BGLR/index.html) to make predictions
 ```
